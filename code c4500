@@ -1,0 +1,45 @@
+print('c4500')
+print ('\n')
+print ('A C4500 é uma calculadora simples que trabalha com operações de adição, subtração, Multiplicação e divisão')
+print ('\n')
+n1 = int(input('digite o primeiro numero: '))
+s = input('qual destes sinais deseja usar>:(+,-,*,//): ' )
+n2 = int(input('digite o segundo numero: '))
+
+match s:
+	case '+':
+		rs = n1 + n2
+		print ('o resultado da conta e de: ', rs)
+	case '-':
+		rs2 = n1 - n2
+		print (' o resultado e de ', rs2)
+	case '*':
+		resp = n1 * n2
+		print (' o resultado e de ', resp)
+	case '//':
+		rgh = n1//n2
+		print ('o resultado e de: ', rgh)
+
+esc = input('Deseja fazer outro calculo(s/n): ')
+
+while esc == 's':
+	n1 = int(input('digite o primeiro numero: '))
+	s = input('qual destes sinais deseja usar>:(+,-,*,//): ' )
+	n2 = int(input('digite o segundo numero: '))
+
+	match s:
+		case '+':
+			rs = n1 + n2
+			print ('o resultado da conta e de: ', rs)
+		case '-':
+			rs2 = n1 - n2
+			print (' o resultado e de ', rs2)
+		case '*':
+			resp = n1 * n2
+			print (' o resultado e de ', resp)
+		case '//':
+			rgh = n1//n2
+			print ('o resultado e de: ', rgh)
+			print ('\n')
+	esc = input('Deseja fazer outro calculo(s/n): ')
+print ('fim da execuçao \n @codemanghost')
